@@ -152,6 +152,7 @@ protected:
     int64_t nTargetSpacing;
     int nLastPOWBlock;
     int nMasternodeCountDrift;
+    int nMasternodeCollateralLimit;
     int nMaturity;
     int nModifierUpdateBlock;
     CAmount nMaxMoneyOut;
@@ -162,6 +163,7 @@ protected:
     std::string strNetworkID;
     CBlock genesis;
     std::vector<CAddress> vFixedSeeds;
+    bool fRequireRPCPassword;
     bool fMiningRequiresPeers;
     bool fAllowMinDifficultyBlocks;
     bool fDefaultConsistencyChecks;
